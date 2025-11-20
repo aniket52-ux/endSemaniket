@@ -7,6 +7,8 @@ app.use(express.json());
 let students = [
   { id: 1, name: "Aniket", marks: 85 },
   { id: 2, name: "Amit", marks: 92 },
+  { id: 3, name: "Roushan", marks: 30},
+
 ];
 
 app.get('/students', (req, res) => {
@@ -36,3 +38,4 @@ app.get('/students/:id', (req, res) => {
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+
